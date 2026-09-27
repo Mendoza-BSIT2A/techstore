@@ -1,0 +1,7 @@
+# Supabase CLI settings for this project.
+project_id = "techstore"
+
+# The app calls the API without a Supabase login, so skip JWT checks.
+# Access control is done by the API itself; the table is protected by RLS.
+[functions.store-api]
+verify_jwt = false
